@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>pagereplacement</title>
+</head>
+<body>
+    <section class="showcase">
+
+        <header>
+            <h2 class="logo">Page replacement </h2>
+            <div class="toggle "></div>
+        </header>
+      <video src="vipul.mp4"muted loop autoplay></video>
+         <div class="overlay"></div>
+        <div class="text">
+            <h2>PAGE replacement ALGORITHM </h2>
+            
+            <p>In an operating system that uses paging for memory management, a page replacement algorithm is needed to decide which page needs to be replaced when new page comes in.
+
+              </p>
+              <p> <h3><b><u>
+                  Page Fault</b></u></h3>  – A page fault happens when a running program accesses a memory page that is mapped into the virtual address space, but not loaded in physical memory.
+                
+                Since actual physical memory is much smaller than virtual memory, page faults happen. In case of page fault, Operating System might have to replace one of the existing pages with the newly needed page. Different page replacement algorithms suggest different ways to decide which page to replace. The target for all algorithms is to reduce the number of page faults.</p>
+        </div>
+            
+    </section>
+    <div class="menu">
+<ul>
+    <li><a href="pagereplacement.html">Home</a></li>
+    <li><a href="FIFO1.html">FIFO</a></li>
+    <li><a href="LRU1.html">LRU</a></li>
+    <li><a href="LIFO.html">LIFO</a></li>
+</ul>
+</div>
+<script>
+    const menuToggle=document.querySelector('.toggle')
+    const showcase=document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click',() => {
+     menuToggle.classList.toggle('active')
+     showcase.classList.toggle('active')
+
+    })
+
+
+
+</script>
+ 
+</body>
+</html> 
